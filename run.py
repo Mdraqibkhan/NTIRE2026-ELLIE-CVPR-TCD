@@ -11,7 +11,7 @@ from greya_scalequery_reduced import my_model_lite
 parser = argparse.ArgumentParser()
 parser.add_argument('--input_dir',  default='./low', help='folder of input (dark) images')
 parser.add_argument('--model_path', default='./model.pth')
-parser.add_argument('--output_dir', default='submission_ntire')
+parser.add_argument('--output_dir', default='results_LL')
 parser.add_argument('--zip',        default='ntire2026_submission.zip')
 parser.add_argument('--no_cuda',    action='store_true')
 opt = parser.parse_args()
@@ -67,13 +67,13 @@ for i, fname in enumerate(img_files, 1):
     out_img.save(os.path.join(opt.output_dir, fname))
     print(f'  [{i:4d}/{len(img_files)}] {fname}  ({W}×{H})')
 
-# ── Pack ZIP ──────────────────────────────────────────────────────────────────
-with zipfile.ZipFile(opt.zip, 'w', zipfile.ZIP_DEFLATED) as zf:
-    for fname in img_files:
-        zf.write(os.path.join(opt.output_dir, fname), arcname=fname)
+# # ── Pack ZIP ──────────────────────────────────────────────────────────────────
+# with zipfile.ZipFile(opt.zip, 'w', zipfile.ZIP_DEFLATED) as zf:
+#     for fname in img_files:
+#         zf.write(os.path.join(opt.output_dir, fname), arcname=fname)
 
-print(f'\n✅ Submission ZIP : {opt.zip}  ({os.path.getsize(opt.zip)/1e6:.1f} MB)')
-print(f'   {len(img_files)} images | CodaBench ready')
+# print(f'\n✅ Submission ZIP : {opt.zip}  ({os.path.getsize(opt.zip)/1e6:.1f} MB)')
+# print(f'   {len(img_files)} images | CodaBench ready')
 
 
 
