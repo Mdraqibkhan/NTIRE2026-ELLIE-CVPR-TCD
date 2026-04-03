@@ -18,13 +18,12 @@ python run.py
 
 
 ## Output
-- Enhanced images saved to `submission_ntire/`
-- ZIP file `ntire2026_submission.zip` created automatically (CodaBench ready)
+- Enhanced images saved to `results_LL/`
 
 ## Arguments
 | Arg | Default | Description |
 |-----|---------|-------------|
 | `--input_dir` | low | Folder of dark input images |
 | `--model_path` | `model.pth` | Path to checkpoint |
-| `--output_dir` | `submission_ntire` | Output folder |
-| `--zip` | `ntire2026_submission.zip` | ZIP filename |
+| `--output_dir` | results_LL` | Output folder |
+
