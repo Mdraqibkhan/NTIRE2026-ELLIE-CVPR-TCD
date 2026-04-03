@@ -2,7 +2,7 @@
 
 ## Contents
 ```
-ntire2026_inference_package/
+NTIRE2026-ELLIE-CVPR-TCD/
 ├── run.py                        # Inference script (self-contained)
 ├── greya_scalequery_reduced.py   # Model architecture
 ├── model.pth                     # Best checkpoint (PSNR 26.10, SSIM 0.9969)
