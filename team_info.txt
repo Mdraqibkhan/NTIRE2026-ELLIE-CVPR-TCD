@@ -1,0 +1,13 @@
+Team name :  CVPR TCD
+
+Team members:
+
+1. MD Raqib Khan, 
+   Affiliation:   Trinity College Dublin The University of Dublin 
+   Contact email : khanmd@tcd.ie
+2.  Dr. Santosh Kumar Vipparthi
+     Affiliation: Indian Institute of Technology Ropar
+    Contact email : skvipparthi@iitrpr.ac.in
+3. Dr. Subrahmanyam Murala
+    Affiliation: Trinity College Dublin The University of Dublin
+    Contact email :  muralas@tcd.ie
